@@ -1,0 +1,25 @@
+# Ignore all data/ subfolders
+data/*/
+
+# Include specific main folders within data/
+!data/upload/
+!data/deepgram-response/
+!data/transcripts/
+!data/generated/
+
+# Ignore JSON files within specific main folders
+data/upload/*.wav
+data/upload/*.mp3
+data/deepgram-response/*.json
+data/transcripts/*.json
+data/generated/*.json
+
+# Other
+node_modules
+.DS_Store
+jsonArray.json
+pnpm-lock.yaml
+all-dual-channel-twilio-calls.json
+*.json
+test/
+.env
